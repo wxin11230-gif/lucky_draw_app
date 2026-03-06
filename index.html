@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>新年幸运签</title>
+  <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="home-btn" class="hidden" onclick="goHome()">返回主页</div>
+
+  <div id="mode-select">
+    <h1 class="gold-text main-title">新年快乐</h1>
+    <div class="scroll-container">
+      <div class="scroll-item" onclick="selectMode('party')">
+        <div class="scroll-body"><span class="brush-text">聚会游戏</span></div>
+      </div>
+      <div class="scroll-item" onclick="selectMode('book')">
+        <div class="scroll-body"><span class="brush-text">答案之书</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="draw-area" class="hidden">
+    <div id="tube-wrapper" ondblclick="handleDraw()">
+      <div class="sticks-container" id="sticks-container"></div>
+      <div id="tube">
+        <div class="tube-mouth"></div>
+        <div class="fu gold-text">福</div>
+      </div>
+    </div>
+
+    <div id="flying-stick">
+      <div id="stick-text" class="wood-carved"></div>
+    </div>
+
+    <div id="scroll-done" onclick="resetDraw()">
+      <div class="scroll-cap"></div>
+      <span class="gold-text">已完成</span>
+      <div class="scroll-cap" style="right:-5px; left:auto;"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
